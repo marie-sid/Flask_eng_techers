@@ -5,11 +5,11 @@ teachers = [
 
     {
         "id": 0,
-        "name": "Morris Simmmons",
+        "name": "Профессор Мяуислав Ушаков",
         "about": "Репетитор американского английского языка. Структурированная система обучения. Всем привет! Я "
                  "предпочитаю называть себя «тренером» английского языка. Мои занятия похожи на тренировки",
         "rating": 4.2,
-        "picture": "https://i.pravatar.cc/300?img=20",
+        "picture": "/static/cat_1.jfif",
         "price": 900,
         "goals": ["travel", "relocate", "study"],
         "free": {
@@ -32,15 +32,15 @@ teachers = [
     },
     {
         "id": 1,
-        "name": "Lee P",
-        "about": "I am a native speaker and conversation tutor, providing private English conversation lessons using "
-                 "something called Life Learning.This method allows students to take complete control of how and what "
-                 "they learn. It is student-led learning focusing on interests, life goals, enjoyment and effective "
-                 "learning for you, as an individual.Stop wasting time with textbooks, tests and unneccesary "
-                 "pressure. Find a love for learning and speaking English with creativity and freedom. The lessons "
-                 "are completely chosen by you to keep you motivated and driven to achieve your goals.",
+        "name": "Кошаченко Мурка Мурзовна",
+        "about": "Я носитель языка и репетитор по разговорной речи, дающий частные уроки разговорной речи на английском языке с использованием "
+                 "того, что называется Life Learning. Этот метод позволяет ученикам полностью контролировать, как и что "
+                 "они изучают. Это обучение под руководством учеников, сосредоточенное на интересах, жизненных целях, удовольствии и эффективном "
+                 "обучении для вас, как личности. Перестаньте тратить время на учебники, тесты и ненужное "
+                 "давление. Найдите любовь к изучению и разговору на английском языке с креативностью и свободой. Уроки "
+                 "выбираются полностью вами, чтобы поддерживать вашу мотивацию и стремление к достижению ваших целей.",
         "rating": 4.8,
-        "picture": "https://i.pravatar.cc/300?img=19",
+        "picture": "/static/cat_2.jfif",
         "price": 1200,
         "goals": ["relocate", "study"],
         "free": {
@@ -63,14 +63,14 @@ teachers = [
     },
     {
         "id": 2,
-        "name": "Felix A",
-        "about": "The English language has become the language of the world, thus, it is considered a world language. "
-                 "Today English seems to evolve to a future global tongue, as its spreading on the Internet in recent "
-                 "years shows (almost 80% of the worldwide web's pages are now written in English). scientific "
-                 "researchers have found out that in fact many small languages have already vanished.But to teach it "
-                 "in a satisfactory manner a good teacher of English is required.xA good teacher of English must "
-                 "possess some qualities.Business, General and conversational English",
-        "picture": "https://i.pravatar.cc/300?img=27",
+        "name": "Пухляков Феликс Викторович",
+        "about": "Английский язык стал языком мира, поэтому его считают мировым языком"
+                 "Сегодня английский язык, похоже, развивается в будущий глобальный язык, как показывает его распространение в Интернете в последние "
+                 "годы (почти 80% страниц всемирной паутины теперь написаны на английском языке). научные "
+                 "исследователи обнаружили, что на самом деле многие малые языки уже исчезли. Но чтобы преподавать его "
+                 "удовлетворительным образом, требуется хороший учитель английского языка. Хороший учитель английского языка должен "
+                 "обладать некоторыми качествами. Деловой, общий и разговорный английский",
+        "picture": "/static/cat_3.jfif",
         "rating": 4.7,
         "price": 1300,
         "goals": ["work"],
@@ -94,12 +94,12 @@ teachers = [
     },
     {
         "id": 3,
-        "name": "Milan S",
-        "about": "I have a wide range of interests, believe me, you will never be bored during our lesson. I worked "
-                 "with lawyers, doctors, biologists and many others to help them improve their English in their "
-                 "respective fields. Since I spent my whole life satisfying my curiosity, I acquired a huge "
-                 "vocabulary that I can pass on to you.",
-        "picture": "https://i.pravatar.cc/300?img=28",
+        "name": "Котова Киса Витальевна",
+        "about": "У меня широкий круг интересов, поверьте, вам никогда не будет скучно на наших занятиях. Я работал "
+                 "с юристами, врачами, биологами и многими другими, чтобы помочь им улучшить свой английский в их "
+                 "соответствующих областях. Поскольку я всю жизнь удовлетворял свое любопытство, я приобрел огромный "
+                 "словарный запас, который я могу передать вам.",
+        "picture": "/static/cat_4.jfif",
         "rating": 4.9,
         "price": 1300,
         "goals": ["travel", "study"],
@@ -123,16 +123,16 @@ teachers = [
     },
     {
         "id": 4,
-        "name": "Gulya S",
-        "about": "Hello! My name is Gulya :) I am a native speaker of the Russian language and I am fluent in "
-                 "English. I have been teaching online for 3 years now. I have an individual program, having studied "
-                 "your requirements, I am preparing a special program. plan, and therefore deal) Books Cambridge, "
-                 "Oxford, etc. I train and develop colloquial speech. We study words, stable combinations and put "
-                 "them into practice. We speak and try to speak :) on different topics. We listen to audio lessons, "
-                 "watch films with subtitles. We analyze everything on the shelves :) In parallel, of course, "
-                 "we study the basics of grammar and the correct delivery of sentences :) All the materials are "
-                 "provided by me. I promise you that you will talk from the first first lesson :)",
-        "picture": "https://i.pravatar.cc/300?img=29",
+        "name": "Пушистик Виталина Ушастовна",
+        "about": "Здравствуйте! Я носитель русского языка и свободно владею "
+                 "английским. Преподаю онлайн уже 3 года. У меня индивидуальная программа, изучив "
+                 "ваши требования, я составляю спец. программу. план, а значит и дело) Книги Кембридж, "
+                 "Оксфорд и т. д. Тренирую и развиваю разговорную речь. Изучаем слова, устойчивые сочетания и применяем "
+                 "их на практике. Говорим и пытаемся говорить :) на разные темы. Слушаем аудиоуроки, "
+                 "смотрим фильмы с субтитрами. Разбираем все по полочкам :) Параллельно, конечно, "
+                 "изучаем основы грамматики и правильную подачу предложений :) Все материалы "
+                 "предоставляю я. Обещаю, что вы заговорите с первого занятия :)",
+        "picture": "/static/cat_5.jfif",
         "rating": 4.3,
         "price": 900,
         "goals": ["travel"],
@@ -156,15 +156,15 @@ teachers = [
     },
     {
         "id": 5,
-        "name": "Yan M",
-        "about": "Hello! My name is Yang and for more than five years I have been teaching English. I spent part of "
-                 "this time in China, where I worked with students from 3 to 40 years old. I deal with both adults "
-                 "and children. But for all ages, I try to make my classes fun and interactive. Teaching English to "
-                 "me is not just a language lesson. I always try to attract a wider cultural and historical context "
-                 "that helps my students understand more about the language and its features. A degree in history "
-                 "helps me a lot to create such an intellectual environment in the classroom.For each student, "
-                 "I develop an individual curriculum that depends on its goals and needs.",
-        "picture": "https://i.pravatar.cc/300?img=30",
+        "name": "Котик Киса Владмировна",
+        "about": "Здравствуйте! Меня зовут Ян, и я преподаю английский язык уже более пяти лет. Часть этого времени я "
+                 "провел в Китае, где работал со студентами от 3 до 40 лет. Я работаю как со взрослыми, так и с детьми. Но для "
+                 "всех возрастов я стараюсь сделать свои занятия интересными и интерактивными. Преподавание английского языка для "
+                 "меня — это не просто урок языка. Я всегда стараюсь привлекать более широкий культурный и исторический контекст, "
+                 "который помогает моим студентам лучше понять язык и его особенности. Степень по истории очень помогает мне "
+                 " создавать такую интеллектуальную среду в классе. Для каждого студента я разрабатываю индивидуальную учебную "
+                 "программу, которая зависит от его целей и потребностей.",
+        "picture": "/static/cat_6.jfif",
         "rating": 3.9,
         "price": 800,
         "goals": ["travel", "study"],
@@ -188,19 +188,19 @@ teachers = [
     },
     {
         "id": 6,
-        "name": "Eran E",
-        "about": "Hello, my name is Eran & I am a friendly native English speaker. I am an experienced English "
-                 "teacher with a neutral accent that is easily understood. This is because I have grown up living in "
-                 "13 countries across 4 continents. They include England, America, Australia & Japan. Presently, "
-                 "I live in Lisbon, Portugal. While I am primarily focused on 1 to 1 tuition, I’ve previously taught "
-                 "classes with as many as 50 students at a time. My students have ranged from 12 to 70 years old. "
-                 "From Israeli middle schoolers all the way through to Thai Government officials. As a result, "
-                 "I’ve learned a wide variety of teaching methods. Currently, I'm taking students with English level: "
-                 "B2 onwards, as well as those who are interested in long-term growth and multiple lessons.I "
-                 "understand how hard it can be to learn another language. That's why my teaching style is fun, "
-                 "constructive & easy-going. Lessons will be tailored to meet your needs & goals. Through my lessons, "
-                 "you will gain the confidence to speak English in your daily life.",
-        "picture": "https://i.pravatar.cc/300?img=32",
+        "name": "Хвостик Снежинка Олеговна",
+        "about": "Здравствуйте, я дружелюбный носитель английского языка. Я опытный преподаватель "
+                 "английского языка с нейтральным акцентом, который легко понять. Это потому, что я вырос, живя в "
+                 "13 странах на 4 континентах. Среди них Англия, Америка, Австралия и Япония. В настоящее время, "
+                 "я живу в Лиссабоне, Португалия. Хотя я в основном сосредоточен на индивидуальном обучении, ранее я преподавал "
+                 "занятия с 50 учениками одновременно. Мои ученики были в возрасте от 12 до 70 лет. "
+                 "От израильских школьников средней школы до тайских правительственных чиновников. В результате, "
+                 "я изучил широкий спектр методов обучения. В настоящее время я беру учеников с уровнем английского: "
+                 "B2 и выше, а также тех, кто заинтересован в долгосрочном развитии и множественных уроках. Я "
+                 "понимаю, как сложно может быть выучить другой язык. Вот почему мой стиль преподавания веселый, "
+                 "конструктивный и легкий. Уроки будут подобраны с учетом ваших потребностей и целей. Благодаря моим урокам, "
+                 "вы обретете уверенность в том, что сможете говорить по-английски в повседневной жизни.",
+        "picture": "/static/cat_7.jfif",
         "rating": 4.5,
         "price": 1200,
         "goals": ["travel", "relocate", "study"],
@@ -225,13 +225,12 @@ teachers = [
 
     {
         "id": 7,
-        "name": "Mr. Mark",
-        "about": "My lessons are fun and practical, but most importantly, we are going to be extremely productive. I "
-                 "believe that the best way to master English is through EXECUTION. Less theory, more practice. Lots "
-                 "of practice. Our goal is to achieve maximum involvement and focus on the subject. Schools trained "
-                 "us to be very passive. Sit quietly by yourself, be lectured to, just consume information. THAT is "
-                 "not how we are going to learn English.",
-        "picture": "https://i.pravatar.cc/300?img=33",
+        "name": "Котякова Муся Евгеньевна",
+        "about": "Мои уроки увлекательны и практичны, но самое главное, мы будем чрезвычайно продуктивны. Я "
+                 "считаю, что лучший способ овладеть английским языком — это ВЫПОЛНЕНИЕ. Меньше теории, больше практики. Много "
+                 "практики. Наша цель — достичь максимальной вовлеченности и сосредоточиться на предмете. Школы приучили "
+                 "нас быть очень пассивными. Сидеть тихо в одиночестве, слушать лекции, просто поглощать информацию. ЭТО не то, как мы собираемся изучать английский язык.",
+        "picture": "/static/cat_8.jfif",
         "rating": 4.5,
         "price": 1100,
         "goals": ["study"],
@@ -256,13 +255,14 @@ teachers = [
 
     {
         "id": 8,
-        "name": "Skye L.",
-        "about": "Hello, My name is Skye. I’m from London in the United Kingdom but I am currently living in Japan. I "
-                 "have a TEFL certificate which I acquired last year. Since moving to Japan I have been teaching some "
-                 "of my Japanese friends English. I think learning should be fun and engaging and even though English "
-                 "can be difficult to learn I aim to make it enjoyable.I enjoy watching football and travelling. I do "
-                 "a lot of Yoga in my spare time and I can't wait to meet you!",
-        "picture": "https://i.pravatar.cc/300?img=35",
+        "name": "Лапочкина Нюша Денисовна",
+        "about": "Привет! Я из Лондона в Соединенном Королевстве, но сейчас живу в Японии. "
+                 "У меня есть сертификат TEFL, который я получил в прошлом году. После переезда в Японию я преподаю "
+                 "английский язык некоторым своим японским друзьям. Я считаю, что обучение должно быть веселым и "
+                 "увлекательным, и хотя английский язык может быть сложным для изучения, я стремлюсь сделать его "
+                 "приятным. Мне нравится смотреть футбол и путешествовать. Я много занимаюсь йогой в свободное время и "
+                 "с нетерпением жду встречи с вами!",
+        "picture": "/static/cat_9.jfif",
         "rating": 5,
         "price": 1700,
         "goals": ["relocate", "work", "programming"],
@@ -287,18 +287,18 @@ teachers = [
 
     {
         "id": 9,
-        "name": "Seeta Y.",
-        "about": "Hello and welcome to my profile learners of the wonderful world of the English language! I am a "
-                 "certified native English teacher with an A in TEFL. Learning something new should be fun and "
-                 "exciting and not something you’re dragging your feet into doing which is why I believe a little fun "
-                 "and humour plays a huge part in the learning process and also the development of a healthy and "
-                 "enjoyable relationship between us.I am also currently trying to learn a new language and so I know "
-                 "from my own experience how daunting or sometimes challenging it can be but please remember I’m here "
-                 "to work with you and not against you. We can work together on pronunciation, reading, "
-                 "conversational English, homework you may have from school or college, slang, in fact on any subject "
-                 "area you enjoy or want to develop as when you’re enjoying the learning process you’re learning "
-                 "without even realising.",
-        "picture": "https://i.pravatar.cc/300?img=36",
+        "name": "Мяучкин Барсик Артемович",
+        "about": "Привет и добро пожаловать в мой профиль для изучающих прекрасный мир английского языка! Я "
+                 "сертифицированный преподаватель-носитель английского языка с оценкой A по TOEFL. Изучение чего-то нового должно быть веселым и "
+                 "захватывающим, а не тем, что вы тянете с места, поэтому я считаю, что немного веселья "
+                 "и юмора играют огромную роль в процессе обучения, а также в развитии здоровых и "
+                 "приятных отношений между нами. Я также сейчас пытаюсь выучить новый язык, и поэтому я знаю "
+                 "по собственному опыту, насколько это может быть пугающе или иногда сложно, но, пожалуйста, помните, что я здесь, "
+                 "чтобы работать с вами, а не против вас. Мы можем вместе работать над произношением, чтением, "
+                 "разговорным английским, домашним заданием, которое у вас может быть в школе или колледже, сленгом, по сути, над любым предметом, "
+                 "в области, которая вам нравится или которую вы хотите развивать, когда вы наслаждаетесь процессом обучения, который вы изучаете, "
+                 "даже не осознавая этого",
+        "picture": "/static/cat_10.jfif",
         "rating": 4.1,
         "price": 1200,
         "goals": ["work", "programming"],
@@ -323,15 +323,15 @@ teachers = [
 
     {
         "id": 10,
-        "name": "Salman S",
-        "about": "I motivate and guide students to achieve their goals. It depends on what is the problem they are "
-                 "facing. Sometimes they just want to practice speaking to improve their fluency. Sometimes it's more "
-                 "complicated which is a language barrier and I need to boost their confidence. Some are coming with "
-                 "a specific task to pass an exam like IELTS and TOEFL. Moreover some are seeking to improve their "
-                 "business skills and business conversation. Sometimes they need to pass the interview in English. "
-                 "According to their requirements I have materials and programs to help them to achieve their desired "
-                 "goals. My vast experience of teaching plays a vital role as well.",
-        "picture": "https://i.pravatar.cc/300?img=37",
+        "name": "Академик Пушистик Котович",
+        "about": "Я мотивирую и направляю студентов к достижению их целей. Это зависит от того, с какой проблемой они "
+                 "сталкиваются. Иногда они просто хотят попрактиковаться в разговоре, чтобы улучшить свою беглость. Иногда это более "
+                 "сложно, например, из-за языкового барьера, и мне нужно повысить их уверенность. Некоторые приходят с "
+                 "конкретным заданием сдать экзамен, такой как IELTS и TOEFL. Более того, некоторые стремятся улучшить свои "
+                 "деловые навыки и деловую беседу. Иногда им нужно пройти собеседование на английском языке. "
+                 "В соответствии с их требованиями у меня есть материалы и программы, которые помогут им достичь желаемых "
+                 "целей. Мой обширный опыт преподавания также играет важную роль.",
+        "picture": "/static/cat_11.jfif",
         "rating": 4.7,
         "price": 1100,
         "goals": ["travel", "study", "work", "programming"],
@@ -356,16 +356,16 @@ teachers = [
 
     {
         "id": 11,
-        "name": "Andrew G",
-        "about": "Hi guys, My name is Andrew and I am an English teacher from the USA currently living now in "
-                 "Atlanta, Georgia.My teaching experience ranges from 1 on 1 to groups, children to adults, "
-                 "in-person or online. IMPORTANT*** Although I have experience teaching Children, right now I'm only "
-                 "teaching Adults through Conversational English. This is my specialty and I do this through focusing "
-                 "mainly on Accent Reduction, Pronunciation, Speech Therapy, and improving one's Vocabulary.I have "
-                 "been traveling and teaching since 2008 and my travels have really helped me be more culturally "
-                 "aware, and relevant. I am fun and unique when it comes to teaching English, you won't that find my "
-                 "classes anywhere else.",
-        "picture": "https://i.pravatar.cc/300?img=38",
+        "name": "Муркин Борис Витаминочив",
+        "about": "Привет, ребята! Меня зовут Эндрю, я преподаватель английского языка из США, в настоящее время проживаю в "
+                 "Атланте, штат Джорджия. Мой опыт преподавания варьируется от индивидуальных занятий до групповых, для детей и взрослых, "
+                 "лично или онлайн. ВАЖНО*** Хотя у меня есть опыт преподавания детям, сейчас я только "
+                 "обучаю взрослых разговорному английскому. Это моя специализация, и я делаю это, сосредоточившись "
+                 "в основном на снижении акцента, произношении, логопедии и улучшении словарного запаса. Я "
+                 "путешествую и преподаю с 2008 года, и мои путешествия действительно помогли мне стать более "
+                 "культурно осведомленным и актуальным. Я веселый и уникальный, когда дело касается преподавания английского языка, вы не найдете моих "
+                 "занятий где-либо еще.",
+        "picture": "/static/cat_12.jfif",
         "rating": 4.2,
         "price": 900,
         "goals": ["travel", "work", "programming"],

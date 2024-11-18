@@ -86,6 +86,7 @@ def goal_render(goal):
     return render_template('goal.html', teachers=goal_teachers, goal=goals[goal])
 
 
+@app.route("/all/profiles/<int:id>/")
 @app.route("/profiles/<int:id>/")
 def profile_render(id):
     return render_template('profile.html', teacher=teachers[id], goals=goals, days=days)

@@ -7,17 +7,14 @@
         <div class="col-12 col-lg-12 offset-lg-1 m-auto">
             <div class="card mb-4">
                 <div class="card-body align-right">
-                    <p class="lead block mt-2 mb-3"><strong>{{teachers|length}} преподавателей в базе</strong></p>
-                    <form action="{{ url_for('all_render') }}" class="float-x d-inline-block" method="POST">
+                    <p class="lead block mt-2 mb-3"><strong>{{ teachers|length }} преподавателей в базе</strong></p>
+                    <form action="{{ url_for('all_render') }}" class="d-inline-block" method="POST">
                         {{ form.csrf_token() }}
-                        <div class="form-row">
-                            {% for option in form.options %}
-                            <div class="col-2 mx-4">
-                                {{ option(class_="form-check-input") }}
-                                {{ option.label(class_="form-check-label") }}
+                        <div class="form-row align-center">
+                            <div class="col">
+                                {{ form.options(class_="form-select d-inline", style="width:auto; display:inline;") }}
+                                {{ form.submit(class_="btn btn-primary my-1 ml-2", style="display:inline;") }}
                             </div>
-                            {% endfor %}
-                            {{form.submit(class_="btn btn-primary my-1 px-4")}}
                         </div>
                     </form>
                 </div>
@@ -94,6 +91,7 @@
     </div>
     {% endfor %}
     {% endif %}
+
 
     <h2 class="text-center mt-5 mb-3">Не нашли своего репетитора?</h2>
     <p class="text-center mb-4">Расскажите, кто вам нужен и мы подберем его сами</p>

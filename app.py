@@ -6,7 +6,6 @@ from wtforms import StringField, SubmitField, HiddenField, RadioField, SelectFie
 from wtforms.validators import InputRequired
 from json_operations import open_json, add_info
 
-
 app = Flask(__name__)
 csrf = CSRFProtect(app)
 
@@ -32,12 +31,12 @@ class BookingForm(FlaskForm):
 
 class RequestForm(FlaskForm):
     goals = RadioField('Какая цель занятий?', choices=[("travel", "Для путешествий"), ("study", "Для школы"),
-                                                      ("work", "Для работы"), ("relocate", "Для переезда"),
+                                                       ("work", "Для работы"), ("relocate", "Для переезда"),
                                                        ("programming", "Для программирования")],
                        default="Для путешествий")
     times = RadioField('Сколько времени есть?', choices=[("1-2", "1-2 часа в неделю"),
                                                          ("3-5", "3-5 часов в неделю"),
-                                                        ("5-7", "5-7 часов в неделю"),
+                                                         ("5-7", "5-7 часов в неделю"),
                                                          ("7-10", "7-10 часов в неделю")],
                        default="5-7 часов в неделю")
     clientName = StringField('Вас зовут', [InputRequired(message="Введите что-нибудь")])
@@ -46,9 +45,9 @@ class RequestForm(FlaskForm):
 
 
 class AllForm(FlaskForm):
-    options = RadioField('options', choices=[('rand', 'В случайном порядке'),
-                                                ('best_rat', 'Сначала лучшие по рейтингу'),
-                                                ('more_price', 'Сначала дорогие'),('less_price', 'Сначала недорогие')])
+    options = SelectField('options', choices=[('rand', 'В случайном порядке'),
+                                              ('best_rat', 'Сначала лучшие по рейтингу'),
+                                              ('more_price', 'Сначала дорогие'), ('less_price', 'Сначала недорогие')])
     submit = SubmitField("Сортировать")
 
 
@@ -65,7 +64,7 @@ def render_server_error(error):
 @app.route("/")
 def main_render():
     six_teachers = sample(teachers, 6)
-    return render_template('index.html', goals=goals, teachers=six_teachers)
+    return render_template('index.html', title="Purr-fect English", goals=goals, teachers=six_teachers)
 
 
 @app.route("/all/", methods=["GET", "POST"])
@@ -77,26 +76,25 @@ def all_render():
         target = form.options.data
     else:
         target = 'rand'
-    return render_template("all.html", form=form, target=target, teachers=teachers_shuffled)
+    return render_template("all.html", title="Все преподаватели", form=form, target=target, teachers=teachers_shuffled)
 
 
 @app.route("/goals/<goal>/")
 def goal_render(goal):
     goal_teachers = [teacher for teacher in teachers if goal in teacher["goals"]]
-    return render_template('goal.html', teachers=goal_teachers, goal=goals[goal])
+    return render_template('goal.html', title="Цели", teachers=goal_teachers, goal=goals[goal])
 
 
 @app.route("/all/profiles/<int:id>/")
 @app.route("/profiles/<int:id>/")
 def profile_render(id):
-    return render_template('profile.html', teacher=teachers[id], goals=goals, days=days)
+    return render_template('profile.html', title="Профиль преподавателя", teacher=teachers[id], goals=goals, days=days)
 
 
 @app.route("/request/")
 def request_render():
     form = RequestForm()
-    return render_template('request.html', form=form)
-
+    return render_template('request.html', title="Подбор преподавателя", form=form)
 
 
 @app.route("/request_done/", methods=["GET", "POST"])
@@ -114,7 +112,7 @@ def request_done_render():
         data['phone'] = form.clientPhone.data
         data_request.append(data)
         add_info("database/request.json", data_request)
-        return render_template('request_done.html', goal=goal_label, time=time_label,
+        return render_template('request_done.html', title="Ваш запрос принят", goal=goal_label, time=time_label,
                                name=data['name'], phone=data['phone'])
     else:
         redirect('/request/')
@@ -123,7 +121,8 @@ def request_done_render():
 @app.route("/booking/<int:id>/<day>/<time>/")
 def booking_render(id, day, time):
     form = BookingForm()
-    return render_template('booking.html', form=form, teacher=teachers[id], day=day, time=time, days=days)
+    return render_template('booking.html', title="Форма бронирования", form=form, teacher=teachers[id], day=day,
+                           time=time, days=days)
 
 
 @app.route("/booking_done/", methods=["GET", "POST"])
@@ -138,7 +137,7 @@ def booking_done_render():
         data['teacher'] = form.clientTeacher.data
         data_booking.append(data)
         add_info("database/booking.json", data_booking)
-        return render_template('booking_done.html', day=data['day'], time=data['time'],
+        return render_template('booking_done.html', titile="Бронирование завершено", day=data['day'], time=data['time'],
                                name=data['name'], phone=data['phone'], days=days)
     else:
         redirect('/')

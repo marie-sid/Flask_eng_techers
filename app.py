@@ -121,7 +121,7 @@ def request_done_render():
 @app.route("/booking/<int:id>/<day>/<time>/")
 def booking_render(id, day, time):
     form = BookingForm()
-    return render_template('booking.html', title="Форма бронирования", form=form, teacher=teachers[id], day=day,
+    return render_template('booking.html', title="Запись на пробный урок", form=form, teacher=teachers[id], day=day,
                            time=time, days=days)
 
 

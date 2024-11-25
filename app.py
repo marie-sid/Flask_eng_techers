@@ -4,13 +4,24 @@ from flask_wtf import FlaskForm
 from flask_wtf.csrf import CSRFProtect
 from wtforms import StringField, SubmitField, HiddenField, RadioField, SelectField
 from wtforms.validators import InputRequired
-from json_operations import open_json, add_info
+import json
 
 app = Flask(__name__)
 csrf = CSRFProtect(app)
 
 SECRET_KEY = '1a0b329df51147t0a111335d2acbfd8'
 app.config['SECRET_KEY'] = SECRET_KEY
+
+
+def open_json(name):
+    with open(f"{name}", "r", encoding='utf-8') as f:
+        return json.load(f)
+
+
+def add_info(name, data):
+    with open(f"{name}", "w", encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
 
 goals = open_json('database/goals.json')
 teachers = open_json('database/teachers.json')
@@ -115,7 +126,7 @@ def request_done_render():
         return render_template('request_done.html', title="Ваш запрос принят", goal=goal_label, time=time_label,
                                name=data['name'], phone=data['phone'])
     else:
-        redirect('/request/')
+        return redirect('/request/')
 
 
 @app.route("/booking/<int:id>/<day>/<time>/")
@@ -140,7 +151,7 @@ def booking_done_render():
         return render_template('booking_done.html', titile="Бронирование завершено", day=data['day'], time=data['time'],
                                name=data['name'], phone=data['phone'], days=days)
     else:
-        redirect('/')
+        return redirect('/')
 
 
 if __name__ == "__main__":
